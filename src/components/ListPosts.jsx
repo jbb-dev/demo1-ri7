@@ -18,6 +18,12 @@ const ListPosts = () => {
       .catch(err => console.log("err => ", err))
   };
 
+  const deletePost = (index) => {
+    let cloneList = [...list];
+    cloneList.splice(index, 1);
+    setList(cloneList);
+  };
+
   useEffect(() => {
     getPosts();
   }, []);
@@ -37,8 +43,7 @@ const ListPosts = () => {
               title={element.title}
               body={element.body}
               index={index}
-              list={list}
-              setList={setList}    
+              deletePost={deletePost}
             />)
           }
         </>
