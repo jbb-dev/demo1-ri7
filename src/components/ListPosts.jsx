@@ -24,10 +24,10 @@ const ListPosts = () => {
   
   return (
     <div>
-      <AddPost 
+      {/* <AddPost 
         list={list}
         setList={setList} 
-      />
+      /> */}
       {list.length > 0 ?
         <>
           <h2>ListPosts :</h2>
@@ -35,7 +35,10 @@ const ListPosts = () => {
             <Post
               key={index}
               title={element.title}
-              body={element.body}        
+              body={element.body}
+              index={index}
+              list={list}
+              setList={setList}    
             />)
           }
         </>
