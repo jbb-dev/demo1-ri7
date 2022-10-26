@@ -32,3 +32,24 @@
 .exp-text {
   font-size: 12px;
 }
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed blue;
+  padding: 2rem;
+  width: 400px;
+}
+
+.register-content > button {
+  margin-top: 20px;
+}
