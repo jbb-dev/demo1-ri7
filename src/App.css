@@ -3,7 +3,6 @@
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 1rem;
 }
 
 .avatar {
@@ -52,4 +51,13 @@
 
 .register-content > button {
   margin-top: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  background-color: rgb(78, 76, 80);
+  height: 50px;
 }
